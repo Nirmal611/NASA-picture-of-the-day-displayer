@@ -1,8 +1,7 @@
 import requests
 
-api_key = 'abcRefWSP3w1LRHjvt7jCxBBJSZibbcwrAwkfvSS'
 
-def img_of_the_day(date):
+def img_of_the_day(api_key , date):
     url = f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date={date}'
     response = requests.get(url)
     print(response)
